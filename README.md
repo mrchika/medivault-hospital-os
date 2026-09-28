@@ -1,4 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MediVault - Hospital OS
+
+Full-stack hospital management dashboard built with Next.js + AWS DynamoDB.
+
+## Tech Stack
+- Next.js (App Router)
+- AWS DynamoDB (eu-north-1) for patient records
+- AWS IAM for credential management
+- REST API: `/api/patients` (GET / POST)
+
+### What I implemented
+- Connected Next.js API routes to DynamoDB for live patient data
+- Fixed DynamoDB `UnrecognizedClientException` by rotating IAM access keys
+- Verified end-to-end: DynamoDB → API → Dashboard
 
 ## Getting Started
 
